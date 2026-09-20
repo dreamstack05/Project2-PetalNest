@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout - PetalNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">PetalNest 💌</div>
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="orders.html">My Orders</a></li>
+    </ul>
+</nav>
+
+<h2 class="page-title">Checkout</h2>
+
+<div class="checkout-container">
+    <div class="checkout-box">
+
+        <h3>Delivery Details</h3>
+
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="text" id="mobile" placeholder="Mobile Number" required>
+        <textarea id="address" placeholder="Delivery Address" required></textarea>
+
+        <select id="payment">
+            <option value="GPay">Google Pay</option>
+            <option value="Cash on Delivery">Cash on Delivery</option>
+        </select>
+
+        <button onclick="confirmOrder()" class="btn">
+            Confirm Order
+        </button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

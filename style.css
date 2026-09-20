@@ -1,0 +1,289 @@
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f1fa;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: linear-gradient(90deg,#6a11cb,#9c27b0);
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 80px;
+  background: linear-gradient(135deg,#6a11cb,#ff4ecd);
+  gap: 50px;
+  color: white;
+  min-height: 100vh; /* ensures full screen height */
+  box-sizing: border-box; /* include padding in height */
+}
+
+.hero-left, .hero-right {
+  flex: 1;
+}
+
+.hero-box {
+  background: rgba(255,255,255,0.1);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.hero-left h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-left p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #f8e5fc;
+}
+
+.hero-left .btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  background: white;
+  color: #6a11cb;
+  transition: 0.3s;
+}
+
+.hero-left .btn:hover {
+  transform: scale(1.05);
+  background: #f8e5fc;
+  color: #6a11cb;
+}
+
+.hero-right img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+/* ================= SHOP ================= */
+.page-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 32px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 250px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.product-card h3 {
+  margin: 15px 0 5px;
+}
+
+.product-card p {
+  font-weight: bold;
+  color: #9c27b0;
+}
+
+.product-card button {
+  background: #6a11cb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* ================= CART ================= */
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+.cart-box {
+  background: white;
+  padding: 40px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.cart-box h3 {
+  margin-bottom: 15px;
+}
+
+.total-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #6a11cb;
+}
+
+/* ================= CHECKOUT ================= */
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+.checkout-box {
+  background: white;
+  padding: 40px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-box input,
+.checkout-box select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.checkout-box button {
+  background: #9c27b0;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.checkout-box button:hover {
+  background: #6a11cb;
+}
+
+/* ================= LOGIN PAGE ================= */
+.login-body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#6a11cb,#ff4ecd);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: white;
+    padding: 50px;
+    width: 380px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-card h1 {
+    margin: 0;
+    color: #6a11cb;
+}
+
+.tagline {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.login-card input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.login-card button {
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: #6a11cb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    background: #9c27b0;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
